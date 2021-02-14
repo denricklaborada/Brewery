@@ -1,0 +1,19 @@
+xcassets:
+    inputs:
+        - Brewery/Resources/Assets.xcassets
+    outputs:
+        templateName: swift4
+        output: Brewery/Modules/SwiftGen/Assets.swift
+ib:
+    inputs: Brewery
+    outputs:
+        - templateName: segues-swift4
+          output: Brewery/Modules/SwiftGen/Segues.swift
+        - templateName: scenes-swift4
+          output: Brewery/Modules/SwiftGen/Scenes.swift
+strings:
+    inputs:
+        - Brewery/Resources/Localized.strings
+    outputs:
+        templateName: structured-swift4
+        output: Brewery/Modules/SwiftGen/Strings.swift

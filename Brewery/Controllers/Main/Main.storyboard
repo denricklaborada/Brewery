@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VQ7-rK-lhj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="qAV-qv-v5O">
+            <objects>
+                <viewController id="o0H-in-ugW" customClass="MainViewController" customModule="Brewery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Fc-F3-8cQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kfs-e1-ZJs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" id="eaU-ud-Pwp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" name="Light-F5F5F5"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="barTintColor" name="Light-F5F5F5"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </searchBar>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No results were found." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-z8-vmB">
+                                <rect key="frame" x="29" y="439.5" width="356" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" name="Dark-272727"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mu5-yL-lLQ"/>
+                        <color key="backgroundColor" name="Light-F5F5F5"/>
+                        <constraints>
+                            <constraint firstItem="Kfs-e1-ZJs" firstAttribute="top" secondItem="mu5-yL-lLQ" secondAttribute="top" id="6mg-wW-kXm"/>
+                            <constraint firstItem="mu5-yL-lLQ" firstAttribute="trailing" secondItem="1Tt-z8-vmB" secondAttribute="trailing" constant="29" id="fBa-CV-bhr"/>
+                            <constraint firstItem="Kfs-e1-ZJs" firstAttribute="leading" secondItem="mu5-yL-lLQ" secondAttribute="leading" id="fgt-gH-RxL"/>
+                            <constraint firstItem="mu5-yL-lLQ" firstAttribute="bottom" secondItem="Kfs-e1-ZJs" secondAttribute="bottom" id="oiJ-eS-KaN"/>
+                            <constraint firstItem="mu5-yL-lLQ" firstAttribute="trailing" secondItem="Kfs-e1-ZJs" secondAttribute="trailing" id="rnr-SB-Rme"/>
+                            <constraint firstItem="1Tt-z8-vmB" firstAttribute="centerY" secondItem="2Fc-F3-8cQ" secondAttribute="centerY" id="sIP-dT-wbJ"/>
+                            <constraint firstItem="1Tt-z8-vmB" firstAttribute="leading" secondItem="mu5-yL-lLQ" secondAttribute="leading" constant="29" id="z3V-bz-vyb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="bA1-Af-wwo"/>
+                    <connections>
+                        <outlet property="beerTableView" destination="Kfs-e1-ZJs" id="IiT-wn-5fg"/>
+                        <outlet property="emptyLabel" destination="1Tt-z8-vmB" id="D1l-ez-63n"/>
+                        <outlet property="searchBar" destination="eaU-ud-Pwp" id="1eg-YM-PeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbA-OU-KjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Njw-P7-hzU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VQ7-rK-lhj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Esn-ZC-Rmf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="Light-F5F5F5"/>
+                        <color key="barTintColor" name="Light-F5F5F5"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o0H-in-ugW" kind="relationship" relationship="rootViewController" id="sNL-h7-Qyr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sET-Qb-rnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Dark-272727">
+            <color red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light-F5F5F5">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

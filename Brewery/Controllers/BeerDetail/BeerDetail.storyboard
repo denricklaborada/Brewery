@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dig-8S-rXg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer Detail View Controller-->
+        <scene sceneID="4rc-2e-Rdb">
+            <objects>
+                <viewController id="dig-8S-rXg" customClass="BeerDetailViewController" customModule="Brewery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s3H-gK-xsf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-d2-GCM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="Light-F5F5F5"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g0L-Or-bZv"/>
+                        <color key="backgroundColor" name="Light-F5F5F5"/>
+                        <constraints>
+                            <constraint firstItem="g0L-Or-bZv" firstAttribute="trailing" secondItem="v0W-d2-GCM" secondAttribute="trailing" id="1gv-bf-0z8"/>
+                            <constraint firstItem="v0W-d2-GCM" firstAttribute="leading" secondItem="g0L-Or-bZv" secondAttribute="leading" id="BLo-rS-rF7"/>
+                            <constraint firstItem="v0W-d2-GCM" firstAttribute="top" secondItem="g0L-Or-bZv" secondAttribute="top" id="gdN-Mb-jna"/>
+                            <constraint firstItem="g0L-Or-bZv" firstAttribute="bottom" secondItem="v0W-d2-GCM" secondAttribute="bottom" id="qk1-0N-9mq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailTableView" destination="v0W-d2-GCM" id="UJ8-nF-yrC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKz-0x-Q3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-272.46376811594206" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Light-F5F5F5">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jqV-0V-0j8" customClass="AlertView" customModule="Brewery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbF-er-5AV" customClass="CustomizableView" customModule="Brewery" customModuleProvider="target">
+                    <rect key="frame" x="32" y="366" width="350" height="164.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WSK-0r-ii7">
+                            <rect key="frame" x="40" y="40" width="270" height="94.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRf-J7-Czy">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                    <color key="textColor" name="Dark-272727"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxb-o0-lmm">
+                                    <rect key="frame" x="0.0" y="36.5" width="270" height="14"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                    <color key="textColor" name="Dark-272727"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGo-mL-m9e">
+                                    <rect key="frame" x="0.0" y="65.5" width="270" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="Close">
+                                        <color key="titleColor" systemColor="systemBlueColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Light-F5F5F5"/>
+                    <constraints>
+                        <constraint firstItem="WSK-0r-ii7" firstAttribute="leading" secondItem="GbF-er-5AV" secondAttribute="leading" constant="40" id="DS9-Cw-oTa"/>
+                        <constraint firstAttribute="bottom" secondItem="WSK-0r-ii7" secondAttribute="bottom" constant="30" id="Om9-S3-6d3"/>
+                        <constraint firstItem="WSK-0r-ii7" firstAttribute="centerX" secondItem="GbF-er-5AV" secondAttribute="centerX" id="a2x-Mh-Z9j"/>
+                        <constraint firstAttribute="trailing" secondItem="WSK-0r-ii7" secondAttribute="trailing" constant="40" id="hom-Qo-1tE"/>
+                        <constraint firstItem="WSK-0r-ii7" firstAttribute="top" secondItem="GbF-er-5AV" secondAttribute="top" constant="40" id="xGn-2D-Bp8"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="awh-MC-skD"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="GbF-er-5AV" firstAttribute="centerX" secondItem="jqV-0V-0j8" secondAttribute="centerX" id="3UW-ko-QPU"/>
+                <constraint firstItem="GbF-er-5AV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="awh-MC-skD" secondAttribute="top" constant="5" id="HoG-Op-0af"/>
+                <constraint firstItem="GbF-er-5AV" firstAttribute="centerY" secondItem="jqV-0V-0j8" secondAttribute="centerY" id="ONC-9x-s7K"/>
+                <constraint firstItem="awh-MC-skD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GbF-er-5AV" secondAttribute="trailing" constant="10" id="Q7p-4i-GLV"/>
+                <constraint firstItem="GbF-er-5AV" firstAttribute="width" secondItem="jqV-0V-0j8" secondAttribute="width" multiplier="0.845" id="Tnr-Y1-ipg"/>
+                <constraint firstItem="GbF-er-5AV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="awh-MC-skD" secondAttribute="leading" constant="10" id="tTA-IZ-tIp"/>
+                <constraint firstItem="awh-MC-skD" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GbF-er-5AV" secondAttribute="bottom" constant="5" id="wsP-Il-euq"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="GbF-er-5AV" id="kLC-v3-Y2M"/>
+                <outlet property="ctaButton" destination="wGo-mL-m9e" id="QIG-89-MK8"/>
+                <outlet property="subLabel" destination="jxb-o0-lmm" id="znG-jF-scW"/>
+                <outlet property="titleLabel" destination="nRf-J7-Czy" id="gqO-A2-HpB"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Dark-272727">
+            <color red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light-F5F5F5">
+            <color red="0.96100002527236938" green="0.96100002527236938" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,12 @@
+/* 
+  Localized.strings
+  Brewery
+
+  Created by Denrick on 2/11/21.
+  
+*/
+
+"Error.Title" = "Error Occured";
+"Error.JSON.Message" = "There was an error parsing the data. Please try again later.";
+"Error.Network.Message" = "You are offline. Please make sure you are connected to the internet and try again.";
+"Error.API.Message" = "There was an error fetching the data. Please try again later.\nCode: %d";
