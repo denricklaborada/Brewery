@@ -13,7 +13,6 @@
 		391A920025D804EF000CBBC6 /* BeerDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 391A91FF25D804EF000CBBC6 /* BeerDescriptionTableViewCell.xib */; };
 		391A920325D804FB000CBBC6 /* BeerDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A920225D804FB000CBBC6 /* BeerDescriptionTableViewCell.swift */; };
 		391A920825D80CF9000CBBC6 /* BeerDetailSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A920725D80CF9000CBBC6 /* BeerDetailSections.swift */; };
-		391A921325D82106000CBBC6 /* BreweryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A921225D82106000CBBC6 /* BreweryTests.swift */; };
 		391A923925D82FD5000CBBC6 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A923825D82FD5000CBBC6 /* PersistenceTests.swift */; };
 		391A924F25D830E6000CBBC6 /* page1.json in Resources */ = {isa = PBXBuildFile; fileRef = 391A924E25D830E6000CBBC6 /* page1.json */; };
 		391A925525D8312A000CBBC6 /* page2.json in Resources */ = {isa = PBXBuildFile; fileRef = 391A925425D8312A000CBBC6 /* page2.json */; };
@@ -32,6 +31,7 @@
 		394898B325D58F5700563D89 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394898B225D58F5700563D89 /* UIViewController+Alerts.swift */; };
 		394898B925D58FEE00563D89 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394898B825D58FEE00563D89 /* AlertView.xib */; };
 		394898BC25D58FFA00563D89 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394898BB25D58FFA00563D89 /* AlertView.swift */; };
+		3949BFBE25D95EB0000677BA /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3949BFBD25D95EB0000677BA /* StringTests.swift */; };
 		396A983425D8F0DF00FCA51A /* XCTest+LoadStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A983325D8F0DF00FCA51A /* XCTest+LoadStub.swift */; };
 		396A983825D8F6CA00FCA51A /* PagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A983725D8F6CA00FCA51A /* PagingTests.swift */; };
 		3985681525D7C1C70021D765 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985681425D7C1C70021D765 /* UIViewController+Loading.swift */; };
@@ -56,6 +56,8 @@
 		3993D2C125D5341200F7441F /* ShadowProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993D2C025D5341200F7441F /* ShadowProtocol.swift */; };
 		3993D2C625D5344600F7441F /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993D2C525D5344600F7441F /* UIView+Animations.swift */; };
 		3993D2C925D5348200F7441F /* CustomizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993D2C825D5348200F7441F /* CustomizableView.swift */; };
+		39B4B1DD25D9647E00B605D2 /* DetailSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4B1DC25D9647E00B605D2 /* DetailSectionTests.swift */; };
+		39B4B1E325D9660200B605D2 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4B1E225D9660200B605D2 /* APIErrorTests.swift */; };
 		B12157D61F0E428C61BF1A72 /* Pods_Brewery_BreweryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE214C72893B178EE109827 /* Pods_Brewery_BreweryTests.framework */; };
 		C4412D825C841B90B7129537 /* Pods_Brewery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55CA195F9FE893E724893B2 /* Pods_Brewery.framework */; };
 /* End PBXBuildFile section */
@@ -79,7 +81,6 @@
 		391A920225D804FB000CBBC6 /* BeerDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		391A920725D80CF9000CBBC6 /* BeerDetailSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailSections.swift; sourceTree = "<group>"; };
 		391A921025D82106000CBBC6 /* BreweryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		391A921225D82106000CBBC6 /* BreweryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryTests.swift; sourceTree = "<group>"; };
 		391A921425D82106000CBBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		391A923825D82FD5000CBBC6 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
 		391A924E25D830E6000CBBC6 /* page1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = page1.json; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		394898B225D58F5700563D89 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		394898B825D58FEE00563D89 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		394898BB25D58FFA00563D89 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		3949BFBD25D95EB0000677BA /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		396A983325D8F0DF00FCA51A /* XCTest+LoadStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+LoadStub.swift"; sourceTree = "<group>"; };
 		396A983725D8F6CA00FCA51A /* PagingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTests.swift; sourceTree = "<group>"; };
 		3985681425D7C1C70021D765 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,8 @@
 		3993D2C025D5341200F7441F /* ShadowProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowProtocol.swift; sourceTree = "<group>"; };
 		3993D2C525D5344600F7441F /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		3993D2C825D5348200F7441F /* CustomizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableView.swift; sourceTree = "<group>"; };
+		39B4B1DC25D9647E00B605D2 /* DetailSectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSectionTests.swift; sourceTree = "<group>"; };
+		39B4B1E225D9660200B605D2 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
 		8BA9677286AB17D261E02617 /* Pods-Brewery-BreweryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewery-BreweryTests.release.xcconfig"; path = "Target Support Files/Pods-Brewery-BreweryTests/Pods-Brewery-BreweryTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FE214C72893B178EE109827 /* Pods_Brewery_BreweryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewery_BreweryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		934C124D75B5ED1E2013E839 /* Pods-Brewery-BreweryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewery-BreweryTests.debug.xcconfig"; path = "Target Support Files/Pods-Brewery-BreweryTests/Pods-Brewery-BreweryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,11 +205,13 @@
 			isa = PBXGroup;
 			children = (
 				391A924D25D830AE000CBBC6 /* TestData */,
-				391A921225D82106000CBBC6 /* BreweryTests.swift */,
+				396A983325D8F0DF00FCA51A /* XCTest+LoadStub.swift */,
 				391A921425D82106000CBBC6 /* Info.plist */,
 				396A983725D8F6CA00FCA51A /* PagingTests.swift */,
 				391A923825D82FD5000CBBC6 /* PersistenceTests.swift */,
-				396A983325D8F0DF00FCA51A /* XCTest+LoadStub.swift */,
+				3949BFBD25D95EB0000677BA /* StringTests.swift */,
+				39B4B1DC25D9647E00B605D2 /* DetailSectionTests.swift */,
+				39B4B1E225D9660200B605D2 /* APIErrorTests.swift */,
 			);
 			path = BreweryTests;
 			sourceTree = "<group>";
@@ -757,7 +763,9 @@
 			files = (
 				396A983425D8F0DF00FCA51A /* XCTest+LoadStub.swift in Sources */,
 				396A983825D8F6CA00FCA51A /* PagingTests.swift in Sources */,
-				391A921325D82106000CBBC6 /* BreweryTests.swift in Sources */,
+				3949BFBE25D95EB0000677BA /* StringTests.swift in Sources */,
+				39B4B1E325D9660200B605D2 /* APIErrorTests.swift in Sources */,
+				39B4B1DD25D9647E00B605D2 /* DetailSectionTests.swift in Sources */,
 				391A923925D82FD5000CBBC6 /* PersistenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

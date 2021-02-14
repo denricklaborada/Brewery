@@ -33,10 +33,10 @@ class PersistenceTests: XCTestCase {
         let expectation = self.expectation(description: "waiting for beers data fetch")
         let stub = loadStub(name: "page1", ofType: "json")
         
-        beersService.fetchBeers(name: "", page: 1, provider: PunkAPI.provider(stubData: stub)) { result in
+        beersService.fetchBeers(provider: PunkAPI.provider(stubData: stub)) { result in
             onlineResult = result
             
-            beersService.fetchBeers(name: "", page: 1, provider: PunkAPI.networkFailProvider()) { result in
+            beersService.fetchBeers(provider: PunkAPI.networkFailProvider()) { result in
                 offlineResult = result
                 expectation.fulfill()
             }

@@ -37,13 +37,13 @@ class PagingTests: XCTestCase {
         let beersService = BeersService()
         let expectation = self.expectation(description: "waiting for beers data fetch")
         
-        beersService.fetchBeers(name: "", page: 1, provider: PunkAPI.provider(stubData: stub1)) { result in
+        beersService.fetchBeers(page: 1, provider: PunkAPI.provider(stubData: stub1)) { result in
             result1 = result
             
-            beersService.fetchBeers(name: "", page: 2, provider: PunkAPI.provider(stubData: stub2)) { result in
+            beersService.fetchBeers(page: 2, provider: PunkAPI.provider(stubData: stub2)) { result in
                 result2 = result
                 
-                beersService.fetchBeers(name: "", page: 3, provider: PunkAPI.provider(stubData: stub3)) { result in
+                beersService.fetchBeers(page: 3, provider: PunkAPI.provider(stubData: stub3)) { result in
                     result3 = result
                     expectation.fulfill()
                 }
